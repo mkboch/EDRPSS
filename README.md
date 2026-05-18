@@ -66,7 +66,3 @@ These generated files are intentionally not committed.
 
 This repository is intentionally code-only. Datasets, generated CSV files, text summaries, and rendered figures are excluded from version control so the full analysis can be reproduced locally from the raw archive and scripts.
 
-## Repository link
-
-Code and run instructions:
-[https://github.com/mkboch/EDRPSS](https://github.com/mkboch/EDRPSS)
