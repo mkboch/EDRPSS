@@ -1,0 +1,28 @@
+﻿# data / artifacts (do not commit)
+Datasets/
+results/
+Figures/
+
+# generated tables / binary outputs
+*.csv
+*.tsv
+*.parquet
+*.pkl
+*.pickle
+*.pt
+*.npz
+*.zip
+*.tar
+*.gz
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env/
+
+# notebook / editor
+.ipynb_checkpoints/
+.vscode/
