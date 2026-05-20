@@ -62,6 +62,31 @@ The scripts generate outputs under:
 
 These generated files are intentionally not committed.
 
+
+
+@'
+
+## Robustness and manuscript table scripts
+
+Additional robustness scripts are provided under:
+
+- `codes/robustness/`
+
+These scripts reproduce the length-aware and audit analyses used in the manuscript, including length-adjusted DI models, length-normalized DI variants, binary DI robustness, automatic lexical audit of deterministic response labels, and LaTeX table generation.
+
+Recommended run order:
+
+```powershell
+python codes\robustness\robustness_extended_checks.py
+python codes\robustness\length_normalized_di_models.py
+python codes\robustness\binary_di_and_label_audit.py
+python codes\robustness\automatic_label_audit.py
+python codes\robustness\make_manuscript_tables.py
+```
+
+Generated folders such as `journal_upgrade_outputs*`, `journal_upgrade_final_tables/`, and `latex_tables/` are intentionally excluded from version control.
+'@ | Add-Content README.md
+
 ## Reproducibility policy
 
 This repository is intentionally code-only. Datasets, generated CSV files, text summaries, and rendered figures are excluded from version control so the full analysis can be reproduced locally from the raw archive and scripts.
