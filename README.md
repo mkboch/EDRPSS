@@ -84,16 +84,8 @@ python codes\robustness\automatic_label_audit.py
 python codes\robustness\make_manuscript_tables.py
 ```
 
-Main generated folders include:
 
-- `journal_upgrade_outputs/`
-- `journal_upgrade_outputs_round2/`
-- `journal_upgrade_outputs_round3/`
-- `journal_upgrade_outputs_round4_auto_audit/`
-- `journal_upgrade_final_tables/`
-- `latex_tables/`
-
-These folders are generated locally and intentionally excluded from version control.
+The folders are generated locally and intentionally excluded from version control.
 
 ## Human-validation scripts
 
@@ -101,14 +93,14 @@ The manuscript includes a small two-annotator validation study for deterministic
 
 Human-validation scripts include:
 
-- `codes/make_human_validation_sample_400.py`
+- `codes/make_human_validation_sample.py`
 - `codes/check_human_validation_annotations.py`
 - `codes/compute_human_validation_metrics.py`
 
 The typical workflow is:
 
 ```powershell
-python codes\make_human_validation_sample_400.py
+python codes\make_human_validation_sample.py
 python codes\check_human_validation_annotations.py
 python codes\compute_human_validation_metrics.py
 ```
