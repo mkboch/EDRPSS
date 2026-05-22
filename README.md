@@ -131,13 +131,3 @@ The scripts generate analysis outputs locally under folders such as:
 - `human_validation_results/`
 
 Generated outputs are intentionally not committed.
-
-## Notes for manuscript reproduction
-
-For Overleaf or manuscript compilation, copy the generated figures and LaTeX tables from the local output folders into the manuscript project. The repository stores the scripts needed to regenerate those artifacts, not the generated artifacts themselves.
-
-## Code repository
-
-This repository contains the code-only reproducibility pipeline for the manuscript:
-
-- `https://github.com/mkboch/EDRPSS`
