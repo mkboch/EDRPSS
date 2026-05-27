@@ -121,7 +121,7 @@ def main():
     ax.set_xticklabels([str(v) for v in agg["di_bin"]])
     ax.set_xlabel("Directive Intensity (DI) bins (posts)")
     ax.set_ylabel("P(Corrective signaling | reply)   (Wilson 95% CI)")
-    ax.set_title("Corrective signaling scales with directive intensity (DI)")
+    ax.set_title("Corrective signaling across raw directive-marker burden strata")
 
     y_min = float(np.nanmin(agg["ci_low"].to_numpy())) if len(agg) else 0.0
     y_max = float(np.nanmax(agg["ci_high"].to_numpy())) if len(agg) else 1.0
@@ -176,7 +176,8 @@ def main():
     ax.set_xlabel("Post Directive Intensity (DI)")
     ax.set_ylabel("Post-level corrective rate among replies")
     ax.set_title("Post-level DI vs corrective signaling (scatter; SI)")
-    ax.set_xlim(-0.5, max(10.5, float(np.nanmax(post_plot['di_post'])) + 0.5))
+    ax.set_xlim(-0.5, 10.5)
+    ax.set_xticks(range(0, 11))
     ax.set_ylim(-0.02, 1.02)
     plt.tight_layout()
     s1_png = figures_dir / "Figure_S1_DI_vs_Corrective_Scatter.png"
